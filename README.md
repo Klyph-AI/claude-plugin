@@ -18,7 +18,7 @@ Run `/mcp`, choose `klyph`, and sign in. Full details are in [plugins/klyph/READ
 - Klyph: https://klyph.ai
 - Privacy: https://klyph.ai/privacy
 - Terms: https://klyph.ai/terms
-- Support: https://klyph.ai
+- Support: https://klyph.ai/support (support@klyph.ai)
 
 This repository is published from the Klyph monorepo and is never edited by hand.
 

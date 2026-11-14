@@ -18,8 +18,8 @@
     "repurposing"
   ],
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://github.com/Klyph-AI/claude-plugin#readme",
-  "supportUrl": "https://klyph.ai",
+  "documentationUrl": "https://klyph.ai/docs/mcp-server",
+  "supportUrl": "https://klyph.ai/support",
   "privacyPolicyUrl": "https://klyph.ai/privacy",
   "termsOfServiceUrl": "https://klyph.ai/terms"
 }

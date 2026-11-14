@@ -52,7 +52,7 @@ The plugin sends your requests and the videos you choose to your Klyph account o
 
 - Privacy policy: https://klyph.ai/privacy
 - Terms: https://klyph.ai/terms
-- Support: https://klyph.ai
+- Support: https://klyph.ai/support (support@klyph.ai)
 
 ## License
 
