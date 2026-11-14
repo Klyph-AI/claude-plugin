@@ -1,0 +1,25 @@
+{
+  "name": "klyph",
+  "displayName": "Klyph",
+  "version": "0.1.0",
+  "description": "Turn long videos into short clips from Claude Code. Klyph finds the best moments in your own footage, captions them, and renders them ready to post.",
+  "author": {
+    "name": "Klyph"
+  },
+  "homepage": "https://klyph.ai",
+  "repository": "https://github.com/Klyph-AI/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "clips",
+    "shorts",
+    "captions",
+    "video-editing",
+    "repurposing"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/Klyph-AI/claude-plugin#readme",
+  "supportUrl": "https://klyph.ai",
+  "privacyPolicyUrl": "https://klyph.ai/privacy",
+  "termsOfServiceUrl": "https://klyph.ai/terms"
+}

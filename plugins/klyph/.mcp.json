@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "klyph": {
+      "type": "http",
+      "url": "https://app.klyph.ai/api/mcp"
+    }
+  }
+}
