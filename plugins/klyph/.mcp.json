@@ -2,7 +2,11 @@
   "mcpServers": {
     "klyph": {
       "type": "http",
-      "url": "https://app.klyph.ai/api/mcp"
+      "url": "https://app.klyph.ai/api/mcp",
+      "oauth": {
+        "clientId": "0efa7668-ac90-47bb-bb1a-20b36741b74c",
+        "callbackPort": 33418
+      }
     }
   }
 }
