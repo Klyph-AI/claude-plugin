@@ -15,7 +15,7 @@ Then run `/mcp`, pick `klyph`, and sign in with your Klyph account. Sign-in need
 
 ## Use it in claude.ai, Claude Desktop or mobile
 
-Until Klyph is in Claude's connector directory, add it as a custom connector:
+Until Klyph is in Claude's connector directory, add it as a custom connector. This also applies if you installed this plugin in the Claude app: its built-in Klyph connector can't sign in there yet, because the app drops the plugin's client ID ([known Claude issue](https://github.com/anthropics/claude-ai-mcp/issues/359)). Add the custom connector below, and the plugin's skills use it.
 
 1. In claude.ai, open **Settings → Connectors → Add custom connector**.
 2. Name: `Klyph`. URL: `https://app.klyph.ai/api/mcp`.
