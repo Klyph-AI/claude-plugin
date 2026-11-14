@@ -8,7 +8,10 @@
     {
       "name": "klyph",
       "source": "./plugins/klyph",
-      "description": "Turn long videos into short, captioned clips from Claude Code. Works on your own footage."
+      "description": "Turn long videos into short, captioned clips from Claude Code. Works on your own footage.",
+      "author": {
+        "name": "Klyph"
+      }
     }
   ]
 }
