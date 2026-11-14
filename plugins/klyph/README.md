@@ -13,6 +13,17 @@ Klyph clips and edits your own videos. It is not AI video generation, and it nev
 
 Then run `/mcp`, pick `klyph`, and sign in with your Klyph account. Sign-in needs Claude Code 2.1.325 or later, and opens a browser window on `localhost:33418`. You need a Klyph account. Sign up at https://klyph.ai.
 
+## Use it in claude.ai, Claude Desktop or mobile
+
+Until Klyph is in Claude's connector directory, add it as a custom connector:
+
+1. In claude.ai, open **Settings → Connectors → Add custom connector**.
+2. Name: `Klyph`. URL: `https://app.klyph.ai/api/mcp`.
+3. Open **Advanced settings** and paste this OAuth Client ID: `f71a5fd4-06ef-4e25-ad42-f55a3515cd4d`. Leave the secret empty.
+4. Click **Connect**, sign in to Klyph and pick the workspace Claude can use.
+
+The connector then works in Claude Desktop and the mobile apps too.
+
 ## Use it
 
 Ask in plain words:
