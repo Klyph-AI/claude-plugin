@@ -1,7 +1,7 @@
 {
   "name": "klyph",
   "displayName": "Klyph",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Turn long videos into short clips from Claude Code. Klyph finds the best moments in your own footage, captions them, and renders them ready to post.",
   "author": {
     "name": "Klyph"

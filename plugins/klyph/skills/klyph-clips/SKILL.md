@@ -15,11 +15,11 @@ Everything runs through the `klyph` MCP server. If its tools are missing or retu
 2. **Pick a project.** Call `list_projects`. Reuse one if it fits. Otherwise `create_project` with a name and optional description. Use `get_project`, `update_project` or `delete_project` only when asked. Deleting is permanent, so confirm first.
 3. **Get the video in and start processing.** Clip settings: `max_clips` (1 to 10), `min_duration` and `max_duration` in seconds, `aspect_ratio` (for example `9:16`), `language`, and `custom_instructions` for the kind of moments to find. Pass what the user asked for; defaults are 3 clips of 30 to 60 seconds at 9:16.
    - **Public URL:** `import_video` with `project_id`, `url` and the clip settings. It imports and processes in one go, so don't call `process_video` afterwards.
-   - **Local file:** call `create_upload` with `project_id`, `filename`, `file_size` in bytes (and `duration_seconds` if you know it). It returns `video_id` and `signed_url`. Then run:
+   - **Local file:** call `create_upload` with `project_id`, `filename`, `file_size` in bytes (and `duration_seconds` if you know it). It returns `video_id` and `signed_url`. Check that `signed_url` starts with `https://` and has no `@` before its first `/` after the host. If it doesn't, stop and tell the user. Then upload the file with a raw PUT, using the file's MIME type (`file --brief --mime-type "<path>"`, for example `video/mp4`):
      ```
-     ${CLAUDE_PLUGIN_ROOT}/scripts/klyph-upload.sh "<path>" "<signed_url>"
+     curl --fail --show-error --progress-bar -X PUT -H "Content-Type: <mime type>" --upload-file "<path>" "<signed_url>" > /dev/null
      ```
-     When it exits 0, call `process_video` with the `video_id` and the clip settings.
+     When curl exits 0, call `process_video` with the `video_id` and the clip settings. If it fails, show the error. If a long time has passed since `create_upload`, get a fresh URL first.
    - **The user would rather use the browser:** call `get_upload_link` with `project_id` and hand them the link. `start_upload` shows the max file size for their plan.
    - Use `reprocess_video` only when the user wants new settings for a processed video. It replaces earlier clips, so confirm first.
 4. **Let it run.** Processing takes a few minutes (longer for long videos).
