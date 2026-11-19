@@ -49,7 +49,7 @@ Or run the command:
 
 ## Privacy
 
-The plugin sends your requests and the videos you choose to your Klyph account over HTTPS, and nothing else. It stores no keys on your machine. Sign-in uses OAuth, and you can disconnect it any time from Klyph settings.
+The plugin sends your requests and the videos you choose to your Klyph account over HTTPS, and nothing else. Requests go to the Klyph connector at `app.klyph.ai`. When you upload a local file, the file goes straight to Klyph's video storage at `fnylzwbbtxtdqswcmvsn.supabase.co`, using a one-time upload link from your account. Klyph keeps your videos, transcripts and clips until you delete them. It stores no keys on your machine. Sign-in uses OAuth, and you can disconnect it any time from Klyph settings.
 
 - Privacy policy: https://klyph.ai/privacy
 - Terms: https://klyph.ai/terms
